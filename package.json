@@ -1,0 +1,64 @@
+{
+  "name": "telegram-ai-bot",
+  "version": "4.5",
+  "description": "Bot Telegram AI canggih dengan sistem memori percakapan, multi-kepribadian, fitur multimedia, dan upload otomatis ke Catbox.moe",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon --watch . --ext js,json --delay 1 bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-deps": "npm install",
+    "setup": "npm install && echo \"✅ Setup selesai! Jalankan 'npm run dev' untuk mode pengembangan atau 'npm start' untuk produksi.\"",
+    "backup": "node backup-script.js",
+    "lint": "eslint .",
+    "log": "tail -f logs/combined.log"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "ai",
+    "gemini",
+    "chatbot",
+    "nodejs",
+    "memory",
+    "conversation",
+    "pinterest",
+    "youtube-downloader",
+    "multimedia-bot",
+    "memory-management",
+    "ai-assistant",
+    "catbox",
+    "file-upload",
+    "media-hosting"
+  ],
+  "author": "Rizky",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.2",
+    "axios": "^1.7.2",
+    "cheerio": "^1.1.2",
+    "form-data": "^4.0.0",
+    "moment": "^2.30.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.4.0",
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/telegram-ai-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/telegram-ai-bot/issues"
+  },
+  "homepage": "https://github.com/username/telegram-ai-bot#readme"
+}
+
